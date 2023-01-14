@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: rgba(177, 157, 79, 0.7);
+  --color-button: rgba(177, 157, 79);
+  --color-secondary: #ab8c37;
+  --color-hover: #e3c285;
+  --color-submit: #454e56;
+}
+.light-mode {
+  --color-primary: rgba(46, 160, 242, 0.7);
+  --color-button: rgba(46, 160, 242);
+  --color-secondary: aliceblue;
+  --color-hover: #3f68fe;
+  --color-submit: #ffffff;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #6c7983;
+  --color-grey-2: #6c7983;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #f2eaea;
+  --color-grey-6: #12181b;
+}
+body {
+  background-image: url("img/car.jpg");
+  z-index: 0;
+  background-size: cover;
+  font-family: "Josefin Sans", sans-serif;
+  /* overflow: hidden; */
+}
+ul {
+  list-style: none;
+}
+.dark-mode-button {
+  position: sticky;
+  top: 85%;
+  left: 90%;
+  z-index: 1;
+}
+.dark-mode-button .btn {
+  top: 85%;
+  right: 3%;
+  width: 4.375rem;
+  height: 4.375rem;
+  border-radius: 50%;
+  background-color: var(--color-button);
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
+}
+.dark-mode-button .btn:active {
+  transform: translateY(-0.1875rem);
+}
+.dark-mode-button .btn:hover {
+  background-color: var(--color-hover);
+}
+.dark-mode-button .btn i {
+  font-size: 2rem;
+  color: black;
+  pointer-events: none;
+}
+.social-media {
+  display: block;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  top: 40%;
+  right: 5%;
+  color: var(--color-button);
+}
+.social-media i {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+.social-media i:hover {
+  color: var(--color-hover);
+}
+.form {
+  align-items: center;
+  margin: 4rem 15rem;
+  background-color: var(--color-primary);
+  padding-top: 1rem;
+  border-radius: 2rem;
+}
+.form h1 {
+  margin: 1rem 3rem;
+  color: var(--color-white);
+}
+.form label {
+  color: var(--color-white);
+  display: block;
+  margin: 1rem 8rem;
+}
+.form .text-inp {
+  padding: 0rem 1rem;
+  border-radius: 1rem;
+  margin: 0.3rem;
+  background-color: var(--color-secondary);
+  border-color: none;
+}
+.form .text-inp:hover {
+  background-color: var(--color-primary);
+}
+.form .pic-upload {
+  padding: 0rem 1rem;
+  border-radius: 1rem;
+  border-color: none;
+  margin: 0.3rem;
+}
+.form button {
+  margin: 1rem 17rem;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  background-color: var(--color-secondary);
+  cursor: pointer;
+}
+.form button:hover {
+  background-color: var(--color-hover);
+  transition-delay: 0.2s;
+}
+.form button p {
+  font-size: 1.5rem;
+}
